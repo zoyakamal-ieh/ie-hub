@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISoc Essentials Hub</title>
+    <script>
+        (function() {
+            // Your two destination links
+            var desktop = "https://sites.google.com/fosis.org.uk/iehubcopy";
+            var mobile = "https://sites.google.com/fosis.org.uk/iehubmobile";
+
+            // The logic: If screen is small, go to mobile. Else, go to desktop.
+            if (window.innerWidth <= 768 || /Android|iPhone|iPad/i.test(navigator.userAgent)) {
+                window.location.replace(mobile);
+            } else {
+                window.location.replace(desktop);
+            }
+        })();
+    </script>
+</head>
+<body style="background-color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <p style="font-family: sans-serif; color: #001f3f;">Loading ISoc Essentials...</p>
+</body>
+</html>
